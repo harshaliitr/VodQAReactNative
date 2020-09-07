@@ -76,6 +76,9 @@ class ListViewVerticalSwipe extends Component {
     return (
       <View style={styles.container}>
         <FlatList
+          testID="listview"
+          accessible
+          accessibilityLabel="listview"
           data={DATA}
           renderItem={this.renderRowView}
           keyExtractor={item => item.id}
